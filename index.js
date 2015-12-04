@@ -29,7 +29,7 @@ module.exports = {
         return `define("${moduleName}",["module","exports"],function(module,exports){\n`
       },
 
-      footer: '\n}'
+      footer: '\n});'
     }
 
     return gulp_wrapper2(wrapperOpt);
