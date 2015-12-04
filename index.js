@@ -7,7 +7,7 @@ module.exports = {
     return gulp_wrapper2(opt);
   },
 
-  amd: function(opt) {
+  cmd2amd: function(opt) {
     opt = opt || {};
 
     var wrapperOpt = {

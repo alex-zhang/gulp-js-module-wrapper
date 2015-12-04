@@ -1,7 +1,7 @@
 gulp-js-module-wrapper
 ==============
 
-> add js module define wrap js content. 
+> add js module define wrap js content.
 
 ## Install
 ```
@@ -17,7 +17,7 @@ var path = require('path');
 
 gulp.task('default', function () {
   return gulp.src('app/*')
-    .pipe(jsModWrapper.amd({
+    .pipe(jsModWrapper.cmd2amd({
       baseDir: path.resolve('./app')
     }));
 ```
