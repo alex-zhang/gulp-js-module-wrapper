@@ -1,0 +1,27 @@
+{
+  "name": "gulp-js-module-wrapper",
+  "version": "0.0.1",
+  "description": "Js Module Wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-zhang/gulp-js-module-wrapper.git"
+  },
+  "keywords": [
+    "AMD",
+    "CMD",
+    "UMD"
+  ],
+  "author": "alex.zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alex-zhang/gulp-js-module-wrapper/issues"
+  },
+  "homepage": "https://github.com/alex-zhang/gulp-js-module-wrapper",
+  "dependencies": {
+    "gulp-wrapper2": "0.0.3"
+  }
+}
