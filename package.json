@@ -1,6 +1,6 @@
 {
   "name": "gulp-js-module-wrapper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Js Module Wrapper",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/alex-zhang/gulp-js-module-wrapper",
   "dependencies": {
-    "gulp-wrapper2": "0.0.3"
+    "gulp-wrapper2": "0.0.4"
   }
 }
