@@ -3,11 +3,11 @@ var path = require('path');
 
 module.exports = {
   //the same api of gulp_wrapper2
-  origin: function(opt) {
+  default: function(opt) {
     return gulp_wrapper2(opt);
   },
 
-  wrapAMD: function(opt) {
+  amd: function(opt) {
     opt = opt || {};
 
     var wrapperOpt = {
