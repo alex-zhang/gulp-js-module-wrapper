@@ -22,6 +22,15 @@ gulp.task('default', function () {
     }));
 ```
 
+it will gengerate a amd header wrappred cmd module like this
+```
+define(module_id,["module","exports"],function(module,exports){
+
+//your origin js code here ...
+
+}
+```
+
 ## License
 
 gulp-js-module-wrapper.js is [MIT Licensed](./LICENSE.md).
