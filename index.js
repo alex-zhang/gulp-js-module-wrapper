@@ -29,7 +29,7 @@ module.exports = {
 
         if(!!replace) {
           if(typeof replace === 'function') {
-            moduleName = replace(moduleName);
+            moduleName = replace(moduleName, filePath, f);
           } else if(replace && replace.hasOwnProperty(moduleName)) {//hash
             moduleName = replace[moduleName];
           }

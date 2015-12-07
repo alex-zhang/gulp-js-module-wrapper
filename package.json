@@ -1,6 +1,6 @@
 {
   "name": "gulp-js-module-wrapper",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Js Module Wrapper",
   "main": "index.js",
   "scripts": {
