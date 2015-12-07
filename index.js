@@ -35,7 +35,7 @@ module.exports = {
           }
         }
 
-        return `define("${moduleName}",["require", module","exports"],function(require,module,exports){\n`
+        return `define("${moduleName}",["require","module","exports"],function(require,module,exports){\n`
       },
 
       footer: '\n});'
