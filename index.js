@@ -10,7 +10,7 @@ module.exports = {
   cmd2amd: function(opt) {
     opt = opt || {};
 
-    var repace = opt.repace;
+    var replace = opt.replace;
 
     var wrapperOpt = {
       header: function(f) {
@@ -27,11 +27,11 @@ module.exports = {
           }
         }
 
-        if(!!repace) {
-          if(typeof repace === 'function') {
-            moduleName = repace(moduleName);
-          } else if(repace && repace.hasOwnProperty(moduleName)) {//hash
-            moduleName = repace[moduleName];
+        if(!!replace) {
+          if(typeof replace === 'function') {
+            moduleName = replace(moduleName);
+          } else if(replace && replace.hasOwnProperty(moduleName)) {//hash
+            moduleName = replace[moduleName];
           }
         }
 
