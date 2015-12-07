@@ -10,8 +10,9 @@ module.exports = {
   cmd2amd: function(opt) {
     opt = opt || {};
 
-    var wrapperOpt = {
+    var repace = opt.repace;
 
+    var wrapperOpt = {
       header: function(f) {
         var filePath = f.path;
         var fileBaseName = path.basename(filePath, path.extname(filePath));
@@ -26,7 +27,15 @@ module.exports = {
           }
         }
 
-        return `define("${moduleName}",["module","exports"],function(module,exports){\n`
+        if(!!repace) {
+          if(typeof repace === 'function') {
+            moduleName = repace(moduleName);
+          } else if(repace && repace.hasOwnProperty(moduleName)) {//hash
+            moduleName = repace[moduleName];
+          }
+        }
+
+        return `define("${moduleName}",["require", module","exports"],function(require,module,exports){\n`
       },
 
       footer: '\n});'
