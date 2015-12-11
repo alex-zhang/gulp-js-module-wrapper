@@ -24,7 +24,7 @@ gulp.task('default', function () {
 
 it will gengerate a amd header wrappred cmd module like this
 ```
-define(module_id,["module","exports"],function(module,exports){
+define(module_id,["require", "module","exports"],function(require, module,exports){
 
 //your origin js code here ...
 
